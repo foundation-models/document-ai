@@ -35,7 +35,7 @@ export function UploadAgentForm({ hideModal, onOk }: IModalProps<any>) {
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
-    defaultValues: { platform: Platform.RAGFlow },
+    defaultValues: { platform: Platform.DocAI },
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
