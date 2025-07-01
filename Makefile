@@ -16,7 +16,7 @@ run-api:
 	echo "Running API server..."
 	. .venv/bin/activate
 	export PYTHONPATH=/home/agent/workspace/document-ai
-	uv run --active python3 -m api.ragflow_server 
+	python3 -m api.ragflow_server 
 
 run-ui:
 	cd web && npm run dev
